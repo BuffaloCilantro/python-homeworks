@@ -1,0 +1,14 @@
+1. Beginning with the root, in what order were the nodes expanded (explored for the first time)? Simply provide a list.
+
+	1, 14, 13, 5, 26, 85, 42
+
+
+2. How many total nodes did we have to expand (explore) before reaching the goal?
+	
+	6 nodes
+
+
+3. Explain, in as much detail as you are able, why it would be easier to search the state tree if the nodes were arranged in BST order. Mention in your explanation what the definition of BST order is.
+
+	In BST, we do not have to go in all the way with our first and succeeding nodes and try to get lucky with hitting our goal like DFS does. Instead, we take a much safer and consistent approach by looking at each depth level of the data tree and searching for the goal that way. This higher consistency stays relevant as you look at bigger trees, since if DFS does not get fortunate and hit the goal state in half the amount of time of going through the whole tree, the time efficency of that strategy has become less efficent than BFS. 
+

@@ -1,0 +1,17 @@
+m = missionaries
+c = cannibals
+
+STATES: 
+(0m/0c, 3m/3c), (0m/1c, 3m/2c), (0m/2c, 3m/1c), (0m/3c, 3m/0c), (3m/3c, 0m/0c), (1m/1c, 2/m/2c), (2m/2c, 1m/1c), (3m/2c, 0m/1c), (3m/1c, 0m/2c), (3m/0c, 0m/3c). Total states: 10
+
+INITIAL STATE: 
+The initial state will start out with all three cannibals and missionaries on one of the two islands, while the the other island will have zero cannibals and missionaries. The boat will be at the island with the cannibals and missionaries.
+
+SUCCESSOR FUNCTION:
+I would determine the actions for the current state by identifying from which island wil the boat go to, how many characters it will take, and what type of characters it is taking. Then, I will add in restriction clauses, where specific actions are denied, such as when there are more cannibals than missionaries on one of the islands, and when the boat is moving with no characters in it. With these, I can determine all possible successor states of a single state.
+
+GOAL STATE: 
+The goal state in this function is when we have all three cannibals and missionaries on the island in which they did not start on. To check this, either check that all 6 characters are on the goal island, or if there are no characters on the starting island and boat.
+
+PATH COST: 
+A defined path cost in this problem makes sense because with it, we can find ways to solve this problem that don't repeat moves/return to teh same states again; a.k.a they help find the most efficent way to solve this. Some actions should cost moret than others, i.e a boat taking one character instead of two, because if not, then calculating how many steps it will take to get to one state of the game can be broken. 
