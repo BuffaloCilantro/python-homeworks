@@ -1,3 +1,4 @@
+# Hi Eugene
 ###############################
 # CSAI HOMEWORK 3
 # STENCIL CODE
