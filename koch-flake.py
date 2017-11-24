@@ -7,5 +7,5 @@ snowflake(350, 11)
 
 exitonclick()
 
-hsbvkjhabsv askfbvas ljhas bjkbkanb
-I HATE SCHOOOL AHHHHH
+
+I LOVE SCHOOOL AHHHHH 
